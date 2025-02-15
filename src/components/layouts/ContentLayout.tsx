@@ -8,7 +8,7 @@ interface ContentLayoutProps {
 
 export const ContentLayout = ({ children, className = "" }: ContentLayoutProps) => {
   return (
-    <div className={`min-h-screen bg-charcoal ${className}`}>
+    <div className={`min-h-screen bg-charcoal pt-16 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {children}
       </div>
