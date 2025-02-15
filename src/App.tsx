@@ -8,6 +8,11 @@ import Index from "./pages/Index";
 import Login from "./pages/auth/Login";
 import SignUp from "./pages/auth/SignUp";
 import About from "./pages/About";
+import Shop from "./pages/Shop";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
+import Wishlist from "./pages/Wishlist";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/layouts/Navbar";
 
@@ -25,11 +30,11 @@ const App = () => (
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/about" element={<About />} />
-          <Route path="/shop" element={<NotFound />} />
-          <Route path="/blog" element={<NotFound />} />
-          <Route path="/contact" element={<NotFound />} />
-          <Route path="/cart" element={<NotFound />} />
-          <Route path="/wishlist" element={<NotFound />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/wishlist" element={<Wishlist />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
